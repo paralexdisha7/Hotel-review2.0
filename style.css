@@ -59,6 +59,8 @@ form {
 label {
   display: block;
   margin-bottom: 8px;
+  /* padding: 0; */
+  
 }
 
 input,
@@ -140,6 +142,7 @@ hr{
   .rating-item input:checked + label {
     /* color: #ffcc00; Change the color for the checked radio */
     /* text-shadow: 5px 5px 30px rgb(255, 213, 46); */
+    box-shadow: 5px 5px 50px rgb(255, 213, 46) inset;
     border: 1px solid rgb(255, 219, 37);
   border-radius: 50%;
 
