@@ -26,3 +26,7 @@ function jumpToMore() {
     var targetDiv = document.getElementById("more");
     targetDiv.scrollIntoView({ behavior: "smooth" });
 }
+function jumpToRoom() {
+    var targetDiv = document.getElementById("room");
+    targetDiv.scrollIntoView({ behavior: "smooth" });
+}
