@@ -9,6 +9,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-tap-highlight-color: transparent;
 }
 .logo {
     display: flex;
@@ -118,7 +119,7 @@ hr{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100px;
+    width: 120px;
     height: 100px;
     cursor: pointer;
     transition: text-shadow 0.3s ease-in-out;
@@ -130,13 +131,18 @@ hr{
 
   .rating-item label {
     font-size: 80px;
+    /* padding: 0px; */
+    padding-bottom: 10px;
     cursor: pointer;
     margin-bottom: -20px;
   }
 
   .rating-item input:checked + label {
-    color: #ffcc00; /* Change the color for the checked radio */
-    text-shadow: 5px 5px 30px rgb(255, 213, 46);
+    /* color: #ffcc00; Change the color for the checked radio */
+    /* text-shadow: 5px 5px 30px rgb(255, 213, 46); */
+    border: 1px solid rgb(255, 219, 37);
+  border-radius: 50%;
+
   }
   .rating-item input:hover + label {
     color: #ffcc00; /* Change the color for the checked radio */
