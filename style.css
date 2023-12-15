@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Josefin+Sans:wght@300;400&family=Play&family=Playball&family=Poppins:wght@200;300;500;600&family=Taviraj:wght@300;400&display=swap");
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+    display: flex;
+    justify-content: center;    
+}
+.logo img{
+    width: 90%;
+}
+.socials{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px 0px 20px;
+}
+.socials a{
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(0, 45, 96);
+  /* height: 20px; */
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 10px;
+}
+.socials a:hover{
+  color: rgb(0, 45, 96);
+  background-color: rgb(131, 189, 255);
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(0, 45, 96);
+    
+    /* text-shadow: 0 0 10px rgb(0, 91, 141); */
+}
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: 20px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+select,textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.next-btn{
+  background-color: rgb(0, 81, 174);
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Poppins';
+  font-weight: 100;
+  text-align: center;
+  width: 50%;
+  padding: 5px 20px;
+  margin: 5px auto;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  /* right: 0px; */
+  display: block;
+}
+button:hover {
+    background-color: rgb(0, 45, 96);
+  }
+section{
+    height: 100vh;
+}
+hr{
+    text-align: center;
+    width: 50%;
+}
+.img-icon{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 38%;
+    font-size: 80px;
+}
+.rating-container1 {
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    justify-content: center;
+  }
+  .rating-container2 {
+    display: flex;
+    justify-content: center;
+    /* margin-left: 14%; */
+  }
+  
+  .rating-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: text-shadow 0.3s ease-in-out;
+  }
+
+  .rating-item input {
+    display: none;
+  }
+
+  .rating-item label {
+    font-size: 80px;
+    cursor: pointer;
+    margin-bottom: -20px;
+  }
+
+  .rating-item input:checked + label {
+    color: #ffcc00; /* Change the color for the checked radio */
+    text-shadow: 0 0 10px rgb(255, 213, 46);
+  }
+  .rating-item input:hover + label {
+    color: #ffcc00; /* Change the color for the checked radio */
+    text-shadow: 0 0 25px rgb(255, 199, 46);
+  }
+  .sub-btn{
+    width: 100%;
+    height: 50px;
+    background-color: green;
+  }

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aaradhya Review</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form>
+        <div class="logo">
+            <img src="name.png" alt="" />
+        </div>
+        <br />
+        <section id="details">
+            <h2>Feedback</h2>
+
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your Full Name" required />
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}"
+                placeholder="Enter your Phone Number" required />
+            <!-- <small>Format: 1234567890</small> -->
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email Address" required />
+
+            <label for="birthday">Birthday: </label>
+            <input type="date" id="birthday" name="birthday" required />
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Enter your City" />
+
+            <div class="next-btn" onclick="jumpToFood()">Next ></div>
+        </section>
+
+        <section id="food">
+            <i class="fa-solid fa-bell-concierge img-icon"></i>
+            <h2>Food</h2>
+            <hr>
+            <div>
+                <div class="rating-container1">
+                    <div class="rating-item">
+                        <input type="radio" id="food5" name="Food" value="5" />
+                        <label for="food5">😍</label>
+                        <h5>Loved it !</h5>
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="food4" name="Food" value="4" />
+                        <label for="food4">😄</label>
+                        <h5>Nice !</h5>
+
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="food3" name="Food" value="3" />
+                        <label for="food3">😐</label>
+                        <h5>Not Bad</h5>
+
+                    </div>
+                </div>
+                <div class="rating-container2">
+                    <div class="rating-item">
+                        <input type="radio" id="food2" name="Food" value="2" />
+                        <label for="food2">☹️</label>
+                        <h5>Bad</h5>
+
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="food1" name="Food" value="1" />
+                        <label for="food1">😖</label>
+                        <h5>Worst !</h5>
+                    </div>
+                </div>
+            </div><br><br><br>
+            <div class="next-btn" onclick="jumpToAmbiance()">Next ></div>
+
+
+        </section>
+        <section id="ambiance">
+            <i class="fa-solid fa-martini-glass-citrus img-icon"></i>
+            <h2>Ambiance</h2>
+            <hr>
+            <div>
+                <div class="rating-container1">
+                    <div class="rating-item">
+                        <input type="radio" id="ambiance5" name="Ambiance" value="5" />
+                        <label for="ambiance5">😍</label>
+                        <h5>Loved it !</h5>
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="ambiance4" name="Ambiance" value="4" />
+                        <label for="ambiance4">😄</label>
+                        <h5>Nice !</h5>
+
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="ambiance3" name="Ambiance" value="3" />
+                        <label for="ambiance3">😐</label>
+                        <h5>Not Bad</h5>
+
+                    </div>
+                </div>
+                <div class="rating-container2">
+                    <div class="rating-item">
+                        <input type="radio" id="ambiance2" name="Ambiance" value="2" />
+                        <label for="ambiance2">☹️</label>
+                        <h5>Bad</h5>
+
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="ambiance1" name="Ambiance" value="1" />
+                        <label for="ambiance1">😖</label>
+                        <h5>Worst !</h5>
+                    </div>
+                </div>
+            </div><br><br><br>
+            <div class="next-btn" onclick="jumpToStaff()">Next ></div>
+        </section>
+        <section id="staff">
+            <i class="fa-solid fa-user-tie img-icon"></i>
+            <h2>Staff</h2>
+            <hr>
+            <div>
+                <div class="rating-container1">
+                    <div class="rating-item">
+                        <input type="radio" id="staff5" name="Staff" value="5" />
+                        <label for="staff5">😍</label>
+                        <h5>Loved it !</h5>
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="staff4" name="Staff" value="4" />
+                        <label for="staff4">😄</label>
+                        <h5>Nice !</h5>
+
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="staff3" name="Staff" value="3" />
+                        <label for="staff3">😐</label>
+                        <h5>Not Bad</h5>
+
+                    </div>
+                </div>
+                <div class="rating-container2">
+                    <div class="rating-item">
+                        <input type="radio" id="staff2" name="Food" value="2" />
+                        <label for="staff2">☹️</label>
+                        <h5>Bad</h5>
+
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="staff1" name="Staff" value="1" />
+                        <label for="staff1">😖</label>
+                        <h5>Worst !</h5>
+                    </div>
+                </div>
+            </div><br><br><br>
+            <div class="next-btn" onclick="jumpToClean()">Next ></div>
+        </section>
+        <section id="cleaning">
+            <i class="fa-solid fa-broom img-icon"></i>
+            <h2>Cleanliness</h2>
+            <hr>
+            <div>
+                <div class="rating-container1">
+                    <div class="rating-item">
+                        <input type="radio" id="cleaning5" name="Cleaning" value="5" />
+                        <label for="cleaning5">😍</label>
+                        <h5>Loved it !</h5>
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="cleaning4" name="Cleaning" value="4" />
+                        <label for="cleaning4">😄</label>
+                        <h5>Nice !</h5>
+
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="cleaning3" name="Cleaning" value="3" />
+                        <label for="cleaning3">😐</label>
+                        <h5>Not Bad</h5>
+
+                    </div>
+                </div>
+                <div class="rating-container2">
+                    <div class="rating-item">
+                        <input type="radio" id="cleaning2" name="Cleaning" value="2" />
+                        <label for="cleaning2">☹️</label>
+                        <h5>Bad</h5>
+
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="cleaning1" name="Cleaning" value="1" />
+                        <label for="cleaning1">😖</label>
+                        <h5>Worst !</h5>
+                    </div>
+                </div>
+            </div><br><br><br>
+            <div class="next-btn" onclick="jumpToParking()">Next ></div>
+        </section>
+        <section id="parking">
+            <i class="fa-solid fa-car img-icon"></i>
+
+            <h2>Parking</h2>
+            <hr>
+            <div>
+                <div class="rating-container1">
+                    <div class="rating-item">
+                        <input type="radio" id="parking5" name="Parking" value="5" />
+                        <label for="parking5">😍</label>
+                        <h5>Loved it !</h5>
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="parking4" name="Parking" value="4" />
+                        <label for="parking4">😄</label>
+                        <h5>Nice !</h5>
+
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="parking3" name="Parking" value="3" />
+                        <label for="parking3">😐</label>
+                        <h5>Not Bad</h5>
+
+                    </div>
+                </div>
+                <div class="rating-container2">
+                    <div class="rating-item">
+                        <input type="radio" id="parking2" name="Parking" value="2" />
+                        <label for="parking2">☹️</label>
+                        <h5>Bad</h5>
+
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="parking1" name="Parking" value="1" />
+                        <label for="parking1">😖</label>
+                        <h5>Worst !</h5>
+                    </div>
+                </div>
+            </div><br><br><br>
+            <div class="next-btn" onclick="jumpToOverall()">Next ></div>
+
+        </section>
+        <section id="overall">
+            <i class="fa-solid fa-hotel img-icon"></i>
+            <h2>Overall</h2>
+            <hr>
+            <div>
+                <div class="rating-container1">
+                    <div class="rating-item">
+                        <input type="radio" id="overall5" name="Overall" value="5" />
+                        <label for="overall5">😍</label>
+                        <h5>Loved it !</h5>
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="overall4" name="Overall" value="4" />
+                        <label for="overall4">😄</label>
+                        <h5>Nice !</h5>
+
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="overall3" name="Overall" value="3" />
+                        <label for="overall3">😐</label>
+                        <h5>Not Bad</h5>
+
+                    </div>
+                </div>
+                <div class="rating-container2">
+                    <div class="rating-item">
+                        <input type="radio" id="overall2" name="Overall" value="2" />
+                        <label for="overall2">☹️</label>
+                        <h5>Bad</h5>
+
+                    </div>
+                    <div class="rating-item">
+                        <input type="radio" id="overall1" name="Overall" value="1" />
+                        <label for="overall1">😖</label>
+                        <h5>Worst !</h5>
+                    </div>
+                </div>
+            </div><br><br><br>
+            <div class="next-btn" onclick="jumpToMore()">Next ></div>
+
+        </section>
+        <section id="more">
+
+            <!-- <h2>More</h2> -->
+            <hr><br><br>
+            <label for="source">How did you hear about our hotel?</label>
+            <select id="source" name="source" required>
+                <option value="NA">-- select --</option>
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="whatsapp">WhatsApp</option>
+                <option value="Posters">Posters</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <label for="purpose">Purpose of your visit:</label>
+        <select id="purpose" name="purpose">
+            <option value="NA">-- select --</option>
+            <option value="vacation">Vacation</option>
+            <option value="wedding">Wedding</option>
+            <option value="Restaurant">Restaurant</option>
+            <option value="other">Other</option>
+        </select>
+        <br /><br />
+        <label for="Review">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Anything else to mention?"></textarea>
+
+            <button type="submit" class="next-btn sub-btn">Submit Review</button>
+            <br>
+            <div class="socials">
+                <a href="https://www.instagram.com/hotel_aaradhya_/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/people/Hotel-Aaradhya/100088504933323/?mibextid=2JQ9oc"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=7559114122"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="tel:+917559114122"><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </section>
+
+
+    </form>
+    <script>
+        function jumpToFood() {
+            var targetDiv = document.getElementById("food");
+            targetDiv.scrollIntoView({ behavior: "smooth" });
+        }
+        function jumpToAmbiance() {
+            var targetDiv = document.getElementById("ambiance");
+            targetDiv.scrollIntoView({ behavior: "smooth" });
+        }
+        function jumpToStaff() {
+            var targetDiv = document.getElementById("staff");
+            targetDiv.scrollIntoView({ behavior: "smooth" });
+        }
+        function jumpToClean() {
+            var targetDiv = document.getElementById("cleaning");
+            targetDiv.scrollIntoView({ behavior: "smooth" });
+        }
+        function jumpToParking() {
+            var targetDiv = document.getElementById("parking");
+            targetDiv.scrollIntoView({ behavior: "smooth" });
+        }
+        function jumpToOverall() {
+            var targetDiv = document.getElementById("overall");
+            targetDiv.scrollIntoView({ behavior: "smooth" });
+        }
+        function jumpToMore() {
+            var targetDiv = document.getElementById("more");
+            targetDiv.scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+
+</html>
