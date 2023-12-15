@@ -143,7 +143,7 @@ hr{
     /* color: #ffcc00; Change the color for the checked radio */
     /* text-shadow: 5px 5px 30px rgb(255, 213, 46); */
     box-shadow: 5px 5px 50px rgba(255, 213, 46, 0.512) inset;
-    border: 1px solid rgb(255, 219, 37);
+    /* border: 1px solid rgb(255, 219, 37); */
   border-radius: 50%;
 
   }
